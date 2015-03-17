@@ -1,3 +1,9 @@
+yunohost-config-nginx (2.1.2) testing; urgency=low
+
+  * [enh] remove useless ssl_client_certificate directive
+
+ -- Julien Malik <julien.malik@paraiso.me>  Tue, 17 Mar 2015 22:46:20 +0100
+
 yunohost-config-nginx (2.1.1) testing; urgency=low
 
   * Bump version to 2.1.1 to bootstrap new build workflow
