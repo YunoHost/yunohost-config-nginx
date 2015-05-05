@@ -37,12 +37,9 @@ then
         cp $TMP/yunohost_local.conf "/etc/nginx/conf.d/$(cat /etc/yunohost/current_host).d/"
     fi
 fi
-    
 
-dpkg -l | grep openresty
-if [[ $? -eq 0 ]]; then
-    cp $TMP/openresty.conf /etc/nginx/conf.d/
-fi
+# Remove openresty specific configurations since we do not use it anymore
+rm -f /etc/nginx/conf.d/openresty.conf
 
 # Check IPv6 support
 if [ ! -f /proc/net/if_inet6 ] || [ -z "$(nginx -V 2>&1 >/dev/null | grep "\-\-with\-ipv6")" ];
