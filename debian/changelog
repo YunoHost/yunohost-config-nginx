@@ -1,3 +1,9 @@
+yunohost-config-nginx (2.1.3) testing; urgency=low
+
+  * [fix] Replace OpenResty with the backported Nginx 1.6
+
+ -- kload <kload@kload.fr>  Tue, 05 May 2015 21:03:40 +0200
+
 yunohost-config-nginx (2.1.2) testing; urgency=low
 
   * [enh] remove useless ssl_client_certificate directive
