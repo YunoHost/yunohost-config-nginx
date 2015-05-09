@@ -1,3 +1,9 @@
+yunohost-config-nginx (2.2.1) testing; urgency=low
+
+  * [fix] Do not replace Openresty on RaspberryPi 1
+
+ -- kload <kload@kload.fr>  Sat, 09 May 2015 22:37:09 +0000
+
 yunohost-config-nginx (2.2.0) stable; urgency=low
 
   * Bumping version to 2.2.0
